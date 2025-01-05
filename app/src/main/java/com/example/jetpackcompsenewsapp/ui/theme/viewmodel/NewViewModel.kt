@@ -37,6 +37,7 @@ class NewViewModel @Inject constructor(
     private val newsRepository: NewsRepository
 ) : ViewModel() {
 
+    
     private val _news: MutableStateFlow<ResourceState<NewsResponse>> =
         MutableStateFlow(ResourceState.Loading())
     val news: StateFlow<ResourceState<NewsResponse>> = _news
